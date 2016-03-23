@@ -34,11 +34,11 @@ map = {1:group1, 2:group2, 3:group3, 4:group4, 5:group5, 6:group6, 7:group7, 8:g
 # print data
 for elem in arr:
     
+    # to know its not broken (doesnt need to be there)
     print elem
+
     # new group
     if lotto != elem[3]:
-        # print "ok"
-        # print count
         if count > 0:
             group = map[count]
             curr = [names, weight, lotto]
@@ -51,8 +51,6 @@ for elem in arr:
     names.append(get_uni(elem[0]))
     count += 1
 
-    # print elem
-    # print get_uni(elem[0])
 
 # do for last one
 if count > 0:
@@ -91,10 +89,9 @@ output5 = []
 output6 = []
 output7 = []
 output8 = []
-
-
 output_map = {1:output1, 2:output2, 3:output3, 4:output4, 5:output5, 6:output6, 7:output7, 8:output8}
 
+# print formatting
 for a in range(0, 8):
     group_num = a + 1;
     group = map[group_num]
